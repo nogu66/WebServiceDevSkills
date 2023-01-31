@@ -1,0 +1,44 @@
+/* common */
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  background: #329e00;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* header */
+
+header {
+  background: #eee;
+}
+
+header .container {
+  display: flex;
+  /* 要素の間にスペース */
+  justify-content: space-between;
+  align-items: center;
+}
