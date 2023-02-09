@@ -1,24 +1,15 @@
 'use strict';
-
 {
-  const scores = [80, 90, 40, 70];
+  const d = [2019, 11, 14];
 
-  //   const [a, b, c, d] = scores;
-  //   console.log(a);
-  //   console.log(b);
-  //   console.log(c);
-  //   console.log(d);
+  // console.log(d.join('/'));
+  console.log(d.join('/'));
 
-  const [a, b, ...others] = scores;
-  console.log(a);
-  console.log(b);
-  console.log(others);
+  const t = '17:08:24';
+  console.log(t.split(':'));
 
-  let x = 30;
-  let y = 70;
-  console.log(x);
-  console.log(y);
-  [x, y] = [y, x];
-  console.log(x);
-  console.log(y);
+  const [hour, minute, second] = t.split(':');
+  console.log(hour);
+  console.log(minute);
+  console.log(second);
 }
