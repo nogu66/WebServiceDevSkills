@@ -3,9 +3,13 @@
 {
   document.querySelector('button').addEventListener('click', () => {
     const targetNode = document.getElementById('target');
-    targetNode.textContent = 'Changed!';
-    targetNode.title = 'This is title!';
-    targetNode.style.color = 'red';
-    targetNode.style.backgroundColor = 'skyblue';
+
+    // if (targetNode.classList.contains('my-color') === true) {
+    //   targetNode.classList.remove('my-color');
+    // } else {
+    //   targetNode.classList.add('my-color');
+    // }
+
+    targetNode.classList.toggle('my-color');
   });
 }
