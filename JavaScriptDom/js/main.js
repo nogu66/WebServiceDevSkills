@@ -2,14 +2,10 @@
 
 {
   document.querySelector('button').addEventListener('click', () => {
-    const targetNode = document.getElementById('target');
+    const item2 = document.createElement('li');
+    item2.textContent = 'item:2';
 
-    // if (targetNode.classList.contains('my-color') === true) {
-    //   targetNode.classList.remove('my-color');
-    // } else {
-    //   targetNode.classList.add('my-color');
-    // }
-
-    targetNode.classList.toggle('my-color');
+    const ul = document.querySelector('ul');
+    ul.appendChild(item2);
   });
 }
