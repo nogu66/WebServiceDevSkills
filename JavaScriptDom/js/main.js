@@ -1,11 +1,11 @@
 'use strict';
 
 {
-  function update() {
-    // document.querySelector('h1').textContent = 'Changed!';
-    // document.querySelector('#target').textContent = 'Changed!';
-    document.getElementById('target').textContent = 'Changed!';
-  }
-
-  setTimeout(update, 1000);
+  document.querySelector('button').addEventListener('click', () => {
+    const targetNode = document.getElementById('target');
+    targetNode.textContent = 'Changed!';
+    targetNode.title = 'This is title!';
+    targetNode.style.color = 'red';
+    targetNode.style.backgroundColor = 'skyblue';
+  });
 }
