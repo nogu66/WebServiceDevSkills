@@ -2,10 +2,9 @@
 
 {
   document.querySelector('button').addEventListener('click', () => {
-    const item2 = document.createElement('li');
-    item2.textContent = 'item:2';
+    const item1 = document.querySelectorAll('li')[1];
 
-    const ul = document.querySelector('ul');
-    ul.appendChild(item2);
+    // item1.remove();
+    document.querySelector('ul').removeChild(item1);
   });
 }
